@@ -1,0 +1,117 @@
+@charset UTF-8;
+/**
+ * 公共样式------------>[区块]
+ *
+ * header				头部
+ * footer				尾部
+ * h-nav				头部导航
+ * h-menu				头部菜单
+ * user-menu			用户设置菜单
+ * 
+ *
+ *
+ */
+
+/* --- 公共 --- */
+.container,.wrapper{width:100%;background-color:#E3ECFD;min-width: 960px;margin: 0 auto;}
+.g-bgf6f9fe{background-color: #F6F9FE;}
+.comWidth,.main{width:960px;margin-left:auto;margin-right:auto;}
+.main{padding-bottom: 100px;}
+#hidden_frame{display: none;}
+.tips-top{width: 100%;min-width: 960px;background: url(/images/tips-top-bg.jpg) no-repeat center 0;padding: 46px 0;}
+.slogan{width: 960px;margin: 0 auto; text-align: center;height: 40px;line-height: 40px;}
+.slogan{color: #fff;}
+.slogan span{font-size: 14px;font-weight: 700;color: #fff;}
+.slogan a{display: inline-block; width: 120px;height: 40px;background-color: #42c9a1;color: #fff;font-weight: 700;font-size: 14px;border-radius: 3px; margin-left: 36px;}
+.slogan a:hover{background-color: #36bc94;}
+
+
+/* --- 头部 --- */
+.header{width:100%;height:80px;background-color:#47536B;}
+
+/* -> logo <- */
+.h-logo{width:200px;float:left;margin-top:15px;}
+
+/* -> 导航 <- */
+.h-nav{margin:20px 0 0 80px;float:left;}
+.h-nav a{position:relative;float:left;color:#a0acc6;padding:14px 20px;font-size: 14px;font-weight: 600;}
+.h-nav a:hover{color:#fff;}
+.h-nav .active{color:#fff;}
+.h-nav .active .n-icon{display:block;width:0;height:0;border-width:0 5px 8px;border-style:solid;border-color:transparent transparent #e3ecfd;position:absolute;bottom:-17px;left:50%;margin-left:-5px;}
+.news-text i{position: absolute;top: 10px;right: 10px;width: 6px;height: 6px;border-radius: 50%;background-color: #e4003b;}
+
+/* -> 菜单 <- */
+.h-menu{float: right;margin-top: 32px;}
+.h-menu .mnav{float: left;font-size: 14px;color: #acb8d0;margin-left: 40px;display: inline; position: relative;}
+.h-menu .mnav a{color: #acb8d0;font-size: 14px;text-decoration: none;font-weight: 600;}
+.h-menu .mnav a:hover{color: #fff;text-decoration: none;}
+.h-menu .search-text,.h-menu .publish-text,.h-menu .login-text/* ,.h-menu .user-name */{background: url(/images/icon/menu-icon.png) no-repeat;padding-left: 32px;}
+.h-menu .search-text{background-position: 0 -22px;}
+.h-menu .publish-text{background-position: 0 -44px;background: none;padding: 8px 10px;border-radius: 3px;border: 1px solid #47536B;}
+.h-menu .login-text,.h-menu .user-name{background-position: 0 0;}
+.h-menu .user-name-comp{background-position: 0 -154px;}
+.h-menu .search-text:hover{background-position: 0 -88px;}
+.h-menu .publish-text:hover{/* background-position: 0 -110px; */border: 1px solid #fff;}
+.h-menu .login-text:hover,.h-menu .user-name:hover{background-position: 0 -66px;}
+.h-menu .user-name-comp:hover{background-position: 0 -132px;}
+.h-menu .mnav .user-name{color: #fff;font-weight: 700;font-size: 14px;margin-left: 7px;display: inline;}
+.h-menu .mnav .active{color:#fff;}
+.h-menu .mnav .active .n-icon{display:block;width:0;height:0;border-width:0 5px 8px;border-style:solid;border-color:transparent transparent #e3ecfd;position:absolute;bottom:-33px;left:50%;margin-left:9px;}
+
+/* -> 用户设置菜单 <- */
+.user-login-info{_width:110px;max-width: 110px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding-right: 10px;}
+.user-login-info .user-img{border-radius: 50%;}
+.user-menu{position: absolute; top: 40px; left: 50%; width: 240px; margin-left: -120px; background-color: #FFF; -webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px; box-shadow:0 0 10px rgba(71, 83, 107, 0.3);filter:alpha(opacity=0);opacity: 0;z-index: 99;-webkti-transform: scale(0);-moz-transform: scale(0);-ms-transform: scale(0);-o-transform: scale(0);transform: scale(0);transform-origin : 50% 0;}
+.user-menu .arrows-top{display:block;width:0;height:0;border-width:1px 7px 13px;border-style:solid;border-color:transparent transparent #fff;position:absolute;top:-14px;left:50%;margin-left:-7px;}
+.user-menu ul{margin-top: 26px; padding: 0 35px 26px;overflow: hidden; position: relative;}
+.user-menu li{position: relative; margin-top: -1px;border-top: 1px solid #F0F2F7;height: 44px;line-height: 44px;}
+.h-menu .user-menu li a{display: inline-block; vertical-align: middle; font-size: 15px; color: #acb8d0;padding-left: 30px;padding-right: 30px;}
+.h-menu .user-menu li a:hover{color: #00b7ee;}
+.h-menu .user-menu li a input{color: #acb8d0;font-size: 14px;text-decoration: none;border:0;background: transparent;cursor: pointer;font-weight: 600;}
+.h-menu .user-menu li a:hover input{color: #00b7ee;text-decoration: none;}
+.h-menu .user-menu li a.logoutbtn{padding: 0;}
+.h-menu .user-menu li input{height: 44px;padding-left: 30px;padding-right: 30px;}
+
+.user-menu li .um-icon{display: inline-block; width: 21px; height: 20px; vertical-align: middle; background: url(/images/icon/user-info-icon.png) no-repeat;}
+.user-menu li .um-publish,.user-menu li .um-resume{background-position: 0 0;}
+.user-menu li .um-gather{background-position: -26px 0;}
+.user-menu li .um-list{background-position: -52px 0;}
+.user-menu li .um-auth{background-position: -78px 0;}
+.user-menu li .um-account{background-position: -104px 0;}
+.user-menu li .um-change-pass{background-position: -130px 0;}
+.user-menu li .um-switch-user{background-position: -156px 0;}
+.user-menu li .um-logout{background-position: -182px 0;}
+.user-menu li:hover a,.user-menu li:hover a input{color: #00b7ee;}
+.user-menu li:hover .um-publish,.user-menu li:hover .um-resume{background-position: 0 -25px;}
+.user-menu li:hover .um-gather{background-position: -26px -25px;}
+.user-menu li:hover .um-list{background-position: -52px -25px;}
+.user-menu li:hover .um-auth{background-position: -78px -25px;}
+.user-menu li:hover .um-account{background-position: -104px -25px;}
+.user-menu li:hover .um-change-pass{background-position: -130px -25px;}
+.user-menu li:hover .um-switch-user{background-position: -156px -25px;}
+.user-menu li:hover .um-logout{background-position: -182px -25px;}
+.user-menu li .num-tips{height: 44px;line-height: 44px;color: #f39800;position: absolute;top: 0;right: 0;}
+.h-menu .user-login-info .dot-tips{width: 5px;height: 5px;background-color: #f39800;border-radius: 50%;overflow: hidden;position: absolute;top: 7px;right: 0;}
+/* ---  页尾 --- */
+.footer{background-color:#4d586e;padding:50px 0 50px;}
+.footer .quannei-win{font-weight:700;font-size:12px;color:#e3ecfd;float:left;}
+.footer .mail-box{float:left;width:450px;/* border-left:1px solid #657087;margin-left:28px;padding-left:28px; */padding-top: 15px;}
+.footer .mail-text{-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;border-radius:3px;border:1px solid #dbdee2;width:226px;padding:9px 0 9px 16px;color:#3E3E3E;font-size:12px;display:inline-block;vertical-align:middle;}
+.footer .mail-btn{display:inline-block;vertical-align:middle;width:54px;height:38px;background-color:#1BA8ED;border-radius:3px;font-size:12px;color:#fff;text-align:center;line-height:38px;margin-left:2px;}
+.footer .mail-btn:hover{background-color: #1F8ED5;}
+.footer .mail-msg{margin-top:6px;height:22px;line-height:22px;color:#acb8d0;font-size:12px;/* background:url(/images/tips-icon.png) no-repeat;padding-left:30px; */}
+/* .footer .copyright{font-size:12px;color:#e3ecfd;float:left;padding-left:50px;}
+.footer .copyright a{color: #e3ecfd;}
+.footer .copyright a:hover{color: #DAE4F5;} */
+
+.footer .ewm{float: right;}
+.footer .copyright{float: right;text-align: right;color: #cbd4e5;line-height: 24px;padding-top: 10px;padding-right: 22px;}
+.footer .copyright a{color: #cbd4e5;}
+.footer .copyright .copy{color: #747e91;}
+
+
+/* --- 小图标 --- */
+
+.release-text-box .num3,.release-text-box .act-icon{background: url(/images/icon/tips-icon.png) no-repeat;}
+
+

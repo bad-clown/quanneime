@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* --- bass css --- */
+*{-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+html,body,div,h1,h2,h3,h4,h5,h6,ul,li,ol,li,dl,dt,dd,p,form,input,textarea,table,th,td,menu,button{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-spacing:0;border-collapse:collapse;}
+caption,th{text-align:center;font-weight:400;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+li{list-style:none;}
+img{vertical-align:bottom;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sub,sup{font-size:83%;}
+textarea{overflow:hidden;resize:none;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:700;}
+a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px Hiragino Sans GB,STHeiti,Microsoft Yahei,sans-serif;color:#333;outline:0;}
+body{background:#f6f9fe;}
+a,a:hover{color:#333;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color:#acb8d0!important;}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#acb8d0!important;}
+input::-moz-placeholder,textarea::-moz-placeholder{color:#acb8d0!important;}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#acb8d0!important;}
+/* --- 清除浮动 --- */
+.clearfix{zoom:1;}
+.clearfix:after{content:"\200B";height:0;display:block;clear:both;visibility:hidden;}

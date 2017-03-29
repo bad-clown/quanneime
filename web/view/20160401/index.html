@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<title>绽放吧！青春-2016杭州龙湖营销精英校园招聘 - 圈内觅 -发现地产圈职业机会</title>
+<style>
+/* CSS Base */
+html,body,div,h1,h2,h3,h4,h5,h6,ul,li,ol,li,dl,dt,dd,p,form,input,textarea,table,th,td,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-spacing:0;border-collapse:collapse;}
+caption,th{text-align:center;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size: 100%;}
+sub,sup{font-size: 83%;}
+textarea{overflow:hidden;resize:none;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 Verdana,"\5FAE\8F6F\96C5\9ED1","\9ED1\4F53";color:#333;outline:0;}
+a,a:hover{color:#333;}
+a,button,input,div,li{ -webkit-tap-highlight-color: rgba(255,0,0,0); }
+body{max-width: 640px;margin: 0 auto;background:#fff;}
+.container img{display: block;vertical-align: bottom;}
+</style>
+</head>
+<body>
+<!-- container -->
+<div class="container">
+	<img src="/images/active/20160401/01.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/02.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/03.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/04.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/05.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/06.jpg" width="100%" alt="">
+	<img src="/images/active/20160401/07.jpg" width="100%" alt="">
+</div>
+<!-- container // end -->
+<script src="/js/jquery.1.11.1.min.js"></script>
+<script type="text/javascript">
+var App = function() {
+	var _ = this;
+	var WIN = $(window);
+	this.init = function() {
+		_._scale();
+		return this;
+	}
+	/*检测屏幕*/
+	this._scale = function() {
+		var phoneWidth = parseInt(window.screen.width),
+			phoneScale = phoneWidth / 640,
+			ua = navigator.userAgent;
+		if (/Android (d+.d+)/.test(ua)) {
+			var version = parseFloat(RegExp.$1);
+			// andriod 2.3
+			if (version > 2.3) {
+				document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				// andriod 2.3以上
+			} else {
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+			// 其他系统
+		} else {
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+	}
+}
+var app = new App().init();
+</script>
+</body>
+</html>

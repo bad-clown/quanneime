@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>系统字典配置说明</title>
+
+</head>
+<body>
+<h1>系统字典配置说明</h1>
+
+<hr />
+
+<h2>格式说明</h2>
+
+<hr />
+
+<p>系统字典是由一条一条的记录组成，每条记录包含4个部分：分类索引(Index)、关键字(Key)、值(Value)、描述(Description)，如下所示：</p>
+
+<table>
+<thead>
+<tr>
+<th>Index      </th>
+<th>Key        </th>
+<th>Value    </th>
+<th>Description     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App        </td>
+<td>SystemName </td>
+<td>iBangbuy </td>
+<td>系统名称        </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>分类索引用来区分不同的分类，每个分类中的关键字都不相同，但是不同分类内的关键字可以相同。
+关键字-值组成一个键值对，系统中通过分类索引和关键字来获取具体的值。
+描述是对这条记录的一个说明，没有实际意义。
+通过修改<strong>Value</strong>值，可以达到动态配置系统的目的。</p>
+
+<blockquote><p><font color=red><strong>重要</strong></font>：不要随便删除记录，否则可能导致系统出严重问题。</p></blockquote>
+
+<h2>配置示例</h2>
+
+<hr />
+
+<p>这里演示如何修改系统的名称，从原来的<strong>iBangbuy</strong>改为<strong>爱帮买</strong></p>
+
+<ol>
+<li>从<strong>系统字典配置文档</strong>中知道，系统名称对应的记录Index为'App', Key值为'SystemName'。</li>
+<li>在Index输入框里输入'App'，在Key输入框里输入'SystemName'，然后点击"查询"按钮。此时系统应该会过滤出一条记录符合要求。如下图所示：<br/>
+<img src="http://www.quannei.me/help/image/input.png" alt="" /></li>
+<li>点击该条记录右边的编辑图标<img src="http://www.quannei.me/help/image/edit.png" title="" alt="" />。进入编辑该条记录的页面，入下图所示：<br/>
+<img src="http://www.quannei.me/help/image/edit_page.png" alt="" /></li>
+<li>修改"Value"下面的文本框内容，将"<strong>iBangBuy</strong>"改为"<strong>爱帮买</strong>"，然后点击"更新"<img src="http://www.quannei.me/help/image/update_button.png" alt="" />按钮。此时已经将系统名称改为"<strong>爱帮买</strong>"，页面也跳转到查看该条记录的页面。入下图所示：<br/>
+<img src="http://www.quannei.me/help/image/view_page.png" alt="" /></li>
+<li>完成。</li>
+</ol>
+
+
+<h2>详细配置项说明</h2>
+
+<hr />
+
+<p>如<font color=red><strong>配置示例</strong></font>所示，通过查找对应的Index和Key，可以定位一条配置项，然后对该配置项修改就可以达到配置系统的目的。所以以下列出的配置项列表，都会指定Index和Key。</p>
+
+<blockquote><p><font color=red><strong>非常重要</strong></font>：该文档中未提及的字典项，<font color=red>不要</font>修改或删除。</p></blockquote>
+
+<h3>1. 系统相关</h3>
+
+<h4>1.1 系统名称</h4>
+
+<pre><code>Index: App
+Key: SystemName
+</code></pre>
+
+<h3>2. 公司类型配置</h3>
+
+<pre><code>Inex: CompanyType
+</code></pre>
+
+<p>可以通过添加条目来增加公司类型，也可以修改已有的Value值来修改公司类型</p>
+
+<h3>3. 职位类型配置</h3>
+
+<pre><code>Index: PositionType
+</code></pre>
+
+<p>和公司类型配置类似，可以添加或修改职位类型的Value值，添加时注意Key值不要重复</p>
+
+<h3>4. 系统管理员配置</h3>
+
+<pre><code>Index: AdminUsers
+</code></pre>
+
+<p>添加Index为AdminUsers的条目来添加系统管理员，Key和Value值均为要添加的管理员用户名（不是昵称）</p>
+</body>
+</html>
